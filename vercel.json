@@ -7,9 +7,10 @@
     }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/api/routes.js" },
-    { "src": "/api/csses", "method": "GET", "dest": "/routes/csses.js" },
-    { "src": "/api/projects", "method": "GET", "dest": "/routes/projects.js" },
-    { "src": "/api/designs", "method": "GET", "dest": "/routes/designs.js" }
+    {
+      "src": "/(.*)",
+      "dest": "/api/routes.js",
+      "methods": ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]
+    }
   ]
 }
