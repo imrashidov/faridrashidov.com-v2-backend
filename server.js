@@ -4,14 +4,20 @@ const dotenv = require("dotenv");
 const app = express();
 const cors = require("cors");
 const logger = require("morgan");
+const MongoClient = require("mongodb");
 const mainRoute = require("./routes/index");
 const port = 5000;
 
 dotenv.config();
 
+const URI = process.env.MONGO_URI;
+
+const client = new MongoClient(URI);
+client.connect();
+
 const connect = async () => {
   try {
-    await mongoose.connect(process.env.MONGO_URI);
+    await mongoose.connect(URI);
     console.log("Connected to mongoDB");
   } catch (error) {
     console.log(error);
