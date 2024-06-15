@@ -6,7 +6,7 @@ const cors = require("cors");
 const logger = require("morgan");
 const mainRoute = require("./routes/index");
 
-const port = 5000;
+const port = 3000;
 
 dotenv.config();
 
