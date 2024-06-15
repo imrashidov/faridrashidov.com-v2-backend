@@ -36,7 +36,7 @@ const run = async () => {
 run().catch((error) => console.log);
 
 app.get("/", (req, res) => {
-  res.send("Car Junction Backend Server Running...");
+  res.send("Backend Server Running...");
 });
 
 app.listen(port, () => {
