@@ -6,7 +6,11 @@
     }
   ],
   "routes": [
-    { "handle": "filesystem" },
-    { "src": "/projects", "dest": "/routes/projects.js" }
+    {
+      "src": "/(.*)",
+      "dest": "/index.js"
+    },
+    { "src": "/api/", "dest": "/routes/routes.js" },
+    { "src": "/api/projects", "dest": "/routes/projects.js" }
   ]
 }
