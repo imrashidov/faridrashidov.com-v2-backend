@@ -4,7 +4,7 @@ const dotenv = require("dotenv");
 const app = express();
 const cors = require("cors");
 const logger = require("morgan");
-const mainRoute = require("./routes/router");
+const mainRoute = require("./routes/index");
 const port = 3000;
 dotenv.config();
 
@@ -22,7 +22,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.send("Hello World");
+  res.send("Server is running...");
 });
 app.use("/api", mainRoute);
 

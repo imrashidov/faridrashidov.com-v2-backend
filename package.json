@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "nodemoon server.js"
+    "start": "nodemon server.js"
   },
   "author": "Farid Rashidov",
   "license": "ISC",
