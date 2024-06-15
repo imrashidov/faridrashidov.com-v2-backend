@@ -4,7 +4,7 @@ const dotenv = require("dotenv");
 const app = express();
 const cors = require("cors");
 const logger = require("morgan");
-const mainRoute = require("./api/server");
+const mainRoute = require("./api/routes");
 const port = 3000;
 dotenv.config();
 
