@@ -2,12 +2,9 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
-  "engines": {
-    "node": "20.x"
-  },
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node index.js"
   },
   "author": "Farid Rashidov",
   "license": "ISC",
